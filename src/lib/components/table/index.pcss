@@ -1,0 +1,52 @@
+.react-drag-table {
+    width: auto;
+    min-width: 100%;
+    table-layout: fixed;
+    text-align: left;
+    border-collapse: collapse;
+    th,
+    td {
+        font-size: 14px;
+        padding: 12px;
+        color: rgba(0, 0, 0, 0.75);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    }
+    thead {
+        tr {
+            background-color: rgba(223, 234, 249, .4)
+        }
+    }
+    tbody {
+        .react-drag-table-tbody-tr {
+            background: #fff;
+            &:hover {
+                background: #ecf6fd;
+            }
+        }
+        .react-drag-table-tbody-tr-drap {
+            background: #108ee9;
+            td {
+                color: #fff;
+            }
+        }
+    }
+    .action {
+        color: #108ee9;
+        display: flex;
+        align-items: center;
+        span {
+            display: inline-block;
+        }
+        .edit {
+            margin-right: 10px;
+        }
+        .line {
+            width: 1px;
+            height: 16px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .cancel {
+            margin-left: 10px;
+        }
+    }
+}
